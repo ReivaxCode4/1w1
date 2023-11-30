@@ -1,0 +1,49 @@
+
+.textbox {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+/* mdn web docs attribute selectors */
+
+.textbox input[type="text"] {
+
+    background-color: #fff;
+
+}
+
+.textbox fieldset {
+
+    background-color: #bbb;
+    display: flex;
+    gap: 10px;
+
+}
+
+.textbox legend {
+
+    font-size: 1.5rem;
+    padding: 3px;
+
+}
+
+.textbox label {}
+
+
+/* Sélecteurs plus spécifiques */
+
+.form__nom {}
+
+.form__prenom {}
+
+.textbox .langage {
+
+    flex-direction: column;
+    
+}
+
+.textbox .langage label {}

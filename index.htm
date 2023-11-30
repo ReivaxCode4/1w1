@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 Xavier Rémy</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body> <!-- ctrl-shift+` = Shortcut View Terminal: Pour rentrer les commandes Git -->
+
+    <div id="entete">
+
+        <header>
+
+            <img src="images/logo.PNG" width="110px" height="110px" alt="logo">
+
+            <h1>Parce que nous aimons les jeux...</h1>
+
+            <img src="images/flags/fr.png" width="128px" height="84px" alt="site web affiché en français">
+            
+            <!-- https://svgbox.net/ -->
+
+            <!--
+                id peut être défini une fois dans le document
+                La même classe peut être utilisée plusieurs fois
+            -->
+
+            <input type="checkbox" id="chk_burger"> <!-- Input doit être avant label -->
+            <label for="chk_burger" id="burger">
+                <img src="images/icons/burger/burger.png" alt="" width="32" height="32">
+                <img src="images/icons/burger/burger-hover.png" alt="" width="32" height="32">
+            </label>
+
+        
+            <nav class="navigation">
+
+                <a href="#accueil">Accueil</a>
+                <a href="#article">Article</a>
+                <a href="#tableau">Tableau</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#video">Vidéos</a>
+                <a href="#formulaire">Formulaire</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </header>
+
+    </div> <!-- Fin .entete -->
+
+    <!--3*(div>section)-->
+
+    <div id="accueil">
+
+        <section>
+
+            <h2>Accueil</h2>
+
+            <p>TP2</p>
+            <p>Titre du site: Parce que nous aimons les jeux...</p>
+            <p>Auteur: Xavier Rémy</p>
+            <p>Cours: 582-1W1 - Mise en page Web</p>
+            <p>Programme d'étude: Techniques d'intégration multimédia</p>
+            <p>Collège de Maisonneuve</p>
+            <!-- Adresse de la Github-page -->
+            <a href="https://github.com/ReivaxCode4">Ma page GitHub</a>
+
+
+        </section>
+
+    </div> <!-- Fin #accueil -->
+
+    <div id="article">
+
+        <section>
+
+            <h2>Article</h2>
+
+        </section>
+
+    </div> <!-- Fin #article -->
+
+    <div id="tableau">
+
+        <section>
+
+            <h2>Tableau</h2>
+
+        </section>
+
+    </div> <!-- Fin #tableau -->
+
+    <div id="formulaire"> <!-- Référence forms HTML: https://www.w3schools.com/html/html_forms.asp -->
+
+        <section>
+
+            <h2>Formulaire</h2>
+
+            <form action="" class="textbox">
+
+                <label class="textbox__nom" for="">Nom: <input type="text"></label>
+                <label class="textbox__prenom" for="">Prénom: <input type="text"></label>
+
+            <fieldset class="langage">
+                
+                <legend>Langage:</legend>
+
+                <label for="chk__html">HTML<input type="checkbox" id="chk__html"></label>
+                <label for="">CSS<input type="checkbox" id=""></label>
+                <label for="">JS<input type="checkbox" id=""></label>
+                <label for="">PHP<input type="checkbox" id=""></label>
+                <label for="">MySQL<input type="checkbox" id=""></label>
+                <label for="">WordPress<input type="checkbox" id=""></label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <!-- Pour les radio bouton, on crée un groupe en utilisant
+                    la même valeur pour l'attribut name -->
+                <legend>Âge</legend>
+                <label for="rad__1">11-15</label>
+                <input type="radio" name="age" id="rad__1">
+                <label for="rad__2">16-20</label>
+                <input type="radio" name="age" id="rad__2">
+                <label for="rad__3">21-25</label>
+                <input type="radio" name="age" id="rad__3">
+
+            </fieldset>
+
+            </form>
+
+        </section>
+
+    </div> <!-- Fin #formulaire -->
+
+    <div id="contact">
+
+        <footer>
+
+            <h2>Pied de page</h2>
+
+        </footer>
+
+    </div> <!-- Fin #contact -->
+
+</body>
+
+</html>

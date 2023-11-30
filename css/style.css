@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+C'est toujours le dernier élément de la suite qui est sélectionné.
+Et c'est sur cet élément qu'on applique la règle de style
+*/
+
+/* Guide des fonctions CSS:
+
+https://css-tricks.com/complete-guide-to-css-functions/
+
+*/
+
+/* Guide sur les sélecteurs CSS:
+
+    https://www.w3schools.com/cssref/css_selectors.php
+
+    Espace « »: main div (permet de sélectionner tous les div inclus dans main
+
+    Plus grand « > »: main > div (permet de sélectionner tous les div qui ont comme parent direct main
+        Permet de sélectionner l'enfant direct de la balise qui précède «>»
+        Différence entre «>» et « »: «>» permet de sélectionner l'enfant direct alors que « » permet de sélectionner l'enfant, l'arrière petit-enfant etc.
+        Plus spécifique que l'opérateur « »
+
+    Plus « + »: main + p (permet de sélectionner le premier «p» situé après la balise main)
+
+    Tilt « ~ »: main ~ p (permet de sélectionner tous les «p» situés après main
+        Permet de sélectionner l'élément suivant (.navigation) 
+        Ex. #chk_burger:checked ~ .navigation = Si la case est coché, sélectionne l'élément à la suite de la case à cocher
+            si la case à cocher #chk_burger est cochée, on sélectionne le conteneur
+    
+*/
+
+html {
+
+    box-sizing: border-box;
+    background-color: #3b3b45;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header, footer {
+
+    background-color: #26262B;
+
+}
+
+/* La balilse body est le conteneur principal flexbox dont les enfants s'afficheront sur une colonne
+    flex-direction: column; */
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    /*row-gap: 50px;*/
+
+}
+
+body > div {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+body > div > section,
+body > div > footer,
+body > div > header {
+
+    display: flex;
+    flex: 0 1 1100px;
+    border: 1px solid #9E92F9;
+
+}
+
+body > div > section {
+
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+body > div > header {
+
+    position: relative;
+    
+}
+
+body > div > section {
+
+    min-height: 100vh;
+
+}
+
+body > div:nth-of-type(1) {
+
+    position: sticky;
+    top: 0;
+
+}
+
+h1, h2 {
+
+    font-family: 'Righteous', sans-serif;
+    
+}
+
+h3, .navigation a {
+
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+h1 {
+
+    color: #fff;
+
+}
+
+h2 {
+
+    color: #7cbbff;
+
+}
+
+section a, footer a {
+
+    font-family: 'Roboto', sans-serif;
+    color: #00ACFF;
+    
+}
