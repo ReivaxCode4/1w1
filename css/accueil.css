@@ -1,5 +1,25 @@
-#accueil p {
+#accueil > section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.profil { /* ul */
+
+    list-style-type: none;
+
+}
+
+/* Clamp size calculator: min width:400px/max width:1100px */
+/*https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9*/
+
+.profil li {
 
     color: #fff;
-    
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(0.75rem, 0.1071rem + 2.5714vw, 1.875rem);
+
 }

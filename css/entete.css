@@ -1,0 +1,49 @@
+
+
+.entete__div {
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+
+.entete__form {
+
+    width: 155px;
+    height: 27px;
+    padding: 4px 5px 5px 5px;
+    background-color: #000;
+    border: 1px solid #555;
+    border-radius: 5px;
+  
+}
+
+#recherche:placeholder-shown {
+
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+
+}
+
+#recherche {
+  
+    font-family: 'DM Sans', sans-serif;
+    color: #bbb;
+    width: 116px;
+    background-color: transparent;
+    border: none;
+  
+}
+  
+  #recherche:focus {
+  
+    outline: none;
+  
+}
+  
+  .entete__form:focus {
+  
+    background-color: #fff;
+  
+}

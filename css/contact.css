@@ -1,0 +1,81 @@
+footer {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 20px 10px 20px;
+    justify-content: space-between;
+
+}
+
+.pied__section {
+
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex: 1 0 33%;
+
+}
+
+.pied__section h3 {
+
+    flex: 1 0 100%;
+    height: 35px;
+
+}
+
+#notice {
+
+    flex: 1 0 100%;
+    justify-content: flex-end;
+    margin-top: 30px;
+    
+}
+
+/* //////////////////////////////////////////////// */
+
+.adresse, .liens { /* ul */
+
+    list-style-type: none;
+
+}
+
+.adresse, #notice, .liens a {
+
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+/* Disposition des images/liens */
+
+.pied__social__img, .pied__departement__img {
+
+    display: flex;
+
+}
+
+/* Gérer l'affichage de l'image des logos */
+
+#github a:nth-of-type(1), #github:hover a:nth-of-type(2),
+#behance a:nth-of-type(1), #behance:hover a:nth-of-type(2),
+#linkedin a:nth-of-type(1), #linkedin:hover a:nth-of-type(2),
+#tim a:nth-last-of-type(2), #tim:hover a:nth-last-of-type(1) {
+
+    display: block;
+
+}
+
+#github  a:nth-of-type(2), #github:hover a:nth-of-type(1),
+#behance a:nth-of-type(2), #behance:hover a:nth-of-type(1),
+#linkedin  a:nth-of-type(2), #linkedin:hover a:nth-of-type(1),
+#tim a:nth-last-of-type(1), #tim:hover a:nth-last-of-type(2) {
+
+    display: none;
+
+}
+
+#github, #behance, #linkedin {
+
+    margin: 0 20px 20px 0;
+
+}

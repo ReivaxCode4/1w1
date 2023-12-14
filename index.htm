@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP2 Xavier Rémy</title>
+    <script src="js/fonctionsStars.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/entete.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/style.css">
 
-</head>
+</head> <!-- https://svgbox.net/ -->
 
-<body> <!-- ctrl-shift+` = Shortcut View Terminal: Pour rentrer les commandes Git -->
+<body> <!-- Shortcut View Terminal: Pour rentrer les commandes Git -->
 
     <div id="entete">
 
         <header>
 
-            <img src="images/logo.PNG" width="110px" height="110px" alt="logo">
+            <div class="entete__div">
+                <img src="images/logo.PNG" width="100" height="100" alt="logo">
+            </div>
 
-            <h1>Parce que nous aimons les jeux...</h1>
+            <div class="entete__div">
 
-            <img src="images/flags/fr.png" width="128px" height="84px" alt="site web affiché en français">
-            
-            <!-- https://svgbox.net/ -->
+                <h1>
+                    <span>Parce que nous </span>
+                    <span>aimons les jeux</span>
+                </h1>
 
-            <!--
-                id peut être défini une fois dans le document
-                La même classe peut être utilisée plusieurs fois
-            -->
+            </div>
+
+            <div class="entete__div">
+                <form class="entete__form">
+                    <input type="search" id="recherche" placeholder="Rechercher">
+                    <label for="recherche">🔎</label>
+                </form>
+            </div>
+
+            <div class="entete__div">
+                <nav class="navlangue">
+                    <a href="#accueil">
+                        <img src="images/flags/fr.png" width="32" height="21" alt="site web affiché en français">FR
+                    </a>
+                    <a href="#contact">
+                        <img src="images/flags/en.png" width="32" height="21" alt="site web affiché en anglais">EN
+                    </a>
+                </nav>
+            </div>
 
             <input type="checkbox" id="chk_burger"> <!-- Input doit être avant label -->
             <label for="chk_burger" id="burger">
@@ -38,17 +61,14 @@
                 <img src="images/icons/burger/burger-hover.png" alt="" width="32" height="32">
             </label>
 
-        
             <nav class="navigation">
-
                 <a href="#accueil">Accueil</a>
                 <a href="#article">Article</a>
                 <a href="#tableau">Tableau</a>
                 <a href="#galerie">Galerie</a>
-                <a href="#video">Vidéos</a>
+                <a href="#videos">Vidéos</a>
                 <a href="#formulaire">Formulaire</a>
                 <a href="#contact">Contact</a>
-
             </nav>
 
         </header>
@@ -63,14 +83,20 @@
 
             <h2>Accueil</h2>
 
-            <p>TP2</p>
-            <p>Titre du site: Parce que nous aimons les jeux...</p>
-            <p>Auteur: Xavier Rémy</p>
-            <p>Cours: 582-1W1 - Mise en page Web</p>
-            <p>Programme d'étude: Techniques d'intégration multimédia</p>
-            <p>Collège de Maisonneuve</p>
-            <!-- Adresse de la Github-page -->
-            <a href="https://github.com/ReivaxCode4">Ma page GitHub</a>
+            <ul class="profil">
+
+                <li>TP2</li>
+                <li>Titre du site: Parce que nous aimons les jeux</li>
+                <li>Auteur: Xavier Rémy</li>
+                <li>Cours: 582-1W1 - Mise en page Web</li>
+                <li>Programme d'étude: Techniques d'intégration multimédia</li>
+                <!-- Adresse de la Github-page -->
+                <li>Github page: <a href="https://reivaxcode4.github.io/1w1/" target="_blank">https://reivaxcode4.github.io/1w1/</a></li>
+                <li>Dépôt github: <a href="https://github.com/ReivaxCode4" target="_blank">https://github.com/ReivaxCode4</a></li>
+                <li>Collège de Maisonneuve</li>
+                <li>Automne 2023</li>
+
+            </ul>
 
 
         </section>
@@ -81,7 +107,7 @@
 
         <section>
 
-            <h2>Article</h2>
+            <h2>Pour créer du divertissement...</h2>
 
         </section>
 
@@ -91,11 +117,157 @@
 
         <section>
 
-            <h2>Tableau</h2>
+            <h2>Tableau de mes compétences</h2>
+
+            <!-- conteneur principal du tableau -->
+
+            <table class="horaire">
+
+                <!-- <caption></caption> -->
+                
+                <!-- On peut utiliser plus d'une classe dans un même élément -->
+
+                <!-- le premier tr, la première ligne (table row),
+                    contient les 5 jours de la semaine -->
+
+                <thead>
+
+                    <tr>
+                        <!-- la première cellule est vide -->
+                        <th id="vide"></th>
+
+                        <th>Description:</th>
+
+                        <th>Application de la compétence:</th>
+
+                        <th>Niveau de compétence:</th>
+
+                        <th>Afin de m'améliorer:</th>
+
+                    </tr>
+
+                </thead>
+
+                <!-- Pour chacune des lignes suivantes, le premier th contient l'heure -->
+
+                <tbody>
+
+                    <tr>
+
+                        <th>Programmation</th>
+
+                        <td></td> <!-- description -->
+
+                        <td></td> <!-- application -->
+
+                        <td></td> <!-- niveau -->
+
+                        <td></td> <!-- amélioration -->
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Conception de jeux</th>
+
+                        <td></td> <!-- description -->
+
+                        <td></td> <!-- application -->
+
+                        <td></td> <!-- niveau -->
+
+                        <!-- amélioration -->
+
+                    </tr> 
+
+                    <tr>
+
+                        <th>Visuels: Dessein numérique</th>
+
+                        <!-- description -->
+
+                        <td></td> <!-- application -->
+
+                        <td></td> <!-- niveau -->
+
+                        <td></td> <!-- amélioration -->
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Composition musicale</th>
+
+                        <!-- description -->
+
+                        <td></td> <!-- application -->
+
+                        <td></td> <!-- niveau -->
+
+                        <td></td> <!-- amélioration -->
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Éthique de travail: Dévouement</th>
+
+                        <td></td> <!-- description -->
+
+                        <td></td> <!-- application -->
+
+                        <td></td> <!-- niveau -->
+
+                        <td></td> <!-- amélioration -->
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Bilinguisme</th>
+
+                        <!-- description -->
+
+                        <!-- application -->
+
+                        <!-- niveau -->
+
+                        <!-- amélioration -->
+
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+
+                </tfoot>
+
+            </table>
 
         </section>
 
     </div> <!-- Fin #tableau -->
+
+    <div id="galerie">
+
+        <section>
+
+            <h2>Galerie de mes travaux</h2>
+
+        </section>
+
+    </div> <!-- Fin #galerie -->
+
+    <div id="videos">
+
+        <section>
+
+            <h2>Vidéos de mes plus grandes inspirations</h2>
+
+        </section>
+
+    </div> <!-- Fin #video -->
 
     <div id="formulaire"> <!-- Référence forms HTML: https://www.w3schools.com/html/html_forms.asp -->
 
@@ -103,37 +275,57 @@
 
             <h2>Formulaire</h2>
 
-            <form action="" class="textbox">
+            <form action="" class="formulaire">
 
-                <label class="textbox__nom" for="">Nom: <input type="text"></label>
-                <label class="textbox__prenom" for="">Prénom: <input type="text"></label>
+            <label id="form__courriel" for="">Adresse courriel: <input type="email"></label>
+            
+                <fieldset class="notif">
 
-            <fieldset class="langage">
-                
-                <legend>Langage:</legend>
+                    <fieldset id="notif__autor">
 
-                <label for="chk__html">HTML<input type="checkbox" id="chk__html"></label>
-                <label for="">CSS<input type="checkbox" id=""></label>
-                <label for="">JS<input type="checkbox" id=""></label>
-                <label for="">PHP<input type="checkbox" id=""></label>
-                <label for="">MySQL<input type="checkbox" id=""></label>
-                <label for="">WordPress<input type="checkbox" id=""></label>
+                        <!-- Pour les radio bouton, on crée un groupe en utilisant
+                            la même valeur pour l'attribut name -->
+                        <p>Souhaiteriez-vous recevoir des notifications?</p>
+                        <label for="notif__yes">Oui: <input type="radio" name="notif__autorisation" id="notif__yes"></label>
+                        <label for="notif__no">Non: <input type="radio" name="notif__autorisation" id="notif__no"></label>
+
+                    </fieldset>
+
+                    <fieldset id="notif__pref">
+                        
+                        <p>Je souhaite être informé(e) de...</p>
+
+                        <label for="notif__choix1">Tout nouveau jeu publié <input type="radio" name="notif__choix" id="notif__choix1"></label>
+
+                        <label for="notif__choix2">Tout nouveau projet publié <input type="radio" name="notif__choix" id="notif__choix2"></label>
+
+                        <label for="notif__choix3">Toute mise à jour sur mes projets actuels et futurs <input type="radio" name="notif__choix" id="notif__choix3"></label>
+
+                        <label for="notif__choix4">Toute mise à jour importante <input type="radio" name="notif__choix" id="notif__choix4"></label>
+
+                    </fieldset>
+    
+                </fieldset>
+
+            <fieldset id="rating">
+
+                <div class="ratings__conteneur">
+                    <div class="stars">
+                    <span data-rating="5"><label for="star5">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star5"></span>
+                    <span data-rating="4"><label for="star4">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star4"></span>
+                    <span data-rating="3"><label for="star3">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star3"></span>
+                    <span data-rating="2"><label for="star2">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star2"></span>
+                    <span data-rating="1"><label for="star1">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star1"></span>
+                    </div>
+                 </div>
 
             </fieldset>
 
-            <fieldset>
+            <p>Des commentaires?</p>
+            <textarea name="commentaires" id="form__comments" cols="30" rows="10"></textarea>
 
-                <!-- Pour les radio bouton, on crée un groupe en utilisant
-                    la même valeur pour l'attribut name -->
-                <legend>Âge</legend>
-                <label for="rad__1">11-15</label>
-                <input type="radio" name="age" id="rad__1">
-                <label for="rad__2">16-20</label>
-                <input type="radio" name="age" id="rad__2">
-                <label for="rad__3">21-25</label>
-                <input type="radio" name="age" id="rad__3">
-
-            </fieldset>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Rénitialiser">
 
             </form>
 
@@ -145,7 +337,67 @@
 
         <footer>
 
-            <h2>Pied de page</h2>
+            <!--<div class="pied">
+                <h2>Pour me contacter</h2>
+            </div>-->
+
+            
+                <!-- Adresse du Collège -->
+                <section class="pied__section">
+                    <h3>Adresse</h3>
+                    <ul class="adresse">
+                      <li>3800 Sherbrooke est</li>
+                      <li>Montréal, QC</li>
+                      <li>H1X 2A2</li>
+                    </ul>
+                </section>
+
+                <!-- Réseaux sociaux -->
+                <section class="pied__section">
+                    <h3>Réseaux sociaux</h3>
+
+                    <label class="pied__social__img" id="github">
+                        <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link"><img src="images/socialmedia/github/github.png" alt="logo github" width="68" height="68"></a>
+                        <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link_hover"><img src="images/socialmedia/github/github-hover.png" alt="hover logo github" width="68" height="68"></a>
+                    </label>
+
+                    <label class="pied__social__img" id="behance">
+                        <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link"><img src="images/socialmedia/behance/behance.png" alt="logo behance" width="68" height="68"></a>
+                        <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link_hover"><img src="images/socialmedia/behance/behance-hover.png" alt="hover logo behance" width="68" height="68"></a>
+                    </label>
+
+                    <label class="pied__social__img" id="linkedin">
+                        <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link"><img src="images/socialmedia/linkedin/linkedin.png" alt="logo linkedin" width="88" height="68"></a>
+                        <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link_hover"><img src="images/socialmedia/linkedin/linkedin-hover.png" alt="hover logo linkedin" width="88" height="68"></a>
+                    </label>
+
+                </section>
+
+                <!-- Description du département -->
+                <section class="pied__section">
+                    <h3>Département</h3>
+                    <label class="pied__departement__img" id="tim">
+                        <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link"><img src="images/tim/tim.png" alt="logo tim" width="198" height="91"></a>
+                        <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link_hover"><img src="images/tim/tim-hover.png" alt="hover logo tim" width="198" height="91"></a>
+                    </label>
+                </section>
+
+                <!-- Liens importants -->
+                <section class="pied__section" id="pied__liens">
+                    <h3>Liens utiles</h3>
+
+                    <ul class="liens">
+                        <li><a href="https://digitalfox-tutorials.com/tutorial.php?title=Creating-the-front-end-of-a-rating-system-with-css-and-javascript" target="_blank">Article pour comment effectuer un form 5 étoiles</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=_gToDN-aoyI" target="_blank">Vidéo pour comment faire un form 5 étoiles</a></li>
+                    </ul>
+                    
+                </section>
+            
+
+            <!-- Avis de confidentialité -->
+            <div class="pied__section" id="notice">
+                Avis de confidentialité | Privacy Notice
+            </div>
 
         </footer>
 

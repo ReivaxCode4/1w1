@@ -1,5 +1,14 @@
 
-.textbox {
+#formulaire > section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formulaire {
 
     display: flex;
     flex-direction: column;
@@ -10,13 +19,19 @@
 
 /* mdn web docs attribute selectors */
 
-.textbox input[type="text"] {
+.formulaire input[type="email"] {
 
     background-color: #fff;
 
 }
 
-.textbox fieldset {
+.notif {
+
+    flex-direction: column;
+    
+}
+
+.formulaire fieldset {
 
     background-color: #bbb;
     display: flex;
@@ -24,26 +39,81 @@
 
 }
 
-.textbox legend {
+#notif__autor {
+
+    border: none;
+
+}
+
+#notif__pref {
+
+    flex-direction: column;
+
+}
+
+#form__comments {
+
+    height: 110px;
+    
+}
+
+.formulaire legend {
 
     font-size: 1.5rem;
     padding: 3px;
 
 }
 
-.textbox label {}
-
-
-/* Sélecteurs plus spécifiques */
-
-.form__nom {}
-
-.form__prenom {}
-
-.textbox .langage {
+.formulaire .langage {
 
     flex-direction: column;
     
 }
 
-.textbox .langage label {}
+fieldset#rating {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.ratings__conteneur {
+
+    display: flex;
+}
+
+.stars {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+
+.stars span {
+
+    color: #26262b;
+    cursor: pointer;
+    transition: color .2s, transform .2s;
+    font-size: 50px;
+
+}
+
+.stars span:hover {
+
+    color: #9e92f9;
+    transform: scale(1.15);
+
+}
+
+.stars span:hover ~ span {
+
+    color: #9e92f9;
+
+}
+
+.star__radio:checked > span {
+
+    color: #9e92f9;
+
+}

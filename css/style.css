@@ -89,21 +89,26 @@ body > div > section {
 body > div > header {
 
     position: relative;
+    padding: 20px;
     
 }
 
 body > div > section {
 
+    display: flex;
     min-height: 100vh;
 
 }
 
-body > div:nth-of-type(1) {
+#entete {
 
+    z-index: 10; /* Superposition par dessus les autres couches, le z-index est supérieur */
     position: sticky;
     top: 0;
 
 }
+
+/* ////////////////////////////////////////////////////// Styles général du texte */
 
 h1, h2 {
 
@@ -119,14 +124,27 @@ h3, .navigation a {
 
 h1 {
 
+    /*white-space: nowrap;*/
+    font-size: 30pt;
     color: #fff;
+    text-shadow: 6px 4px 12px #555;
 
+}
+
+span {
+
+    white-space: nowrap;
 }
 
 h2 {
 
     color: #7cbbff;
 
+}
+
+h3 {
+
+    color: #ff9560;
 }
 
 section a, footer a {
