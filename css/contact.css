@@ -16,6 +16,12 @@ footer {
 
 }
 
+#pied__h2 {
+
+    margin-bottom: 20px;
+    
+}
+
 .pied__section h3 {
 
     flex: 1 0 100%;

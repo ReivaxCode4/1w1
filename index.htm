@@ -2,14 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Mise en page Web - TP2: Sujet libre sur une seule page">
+    <meta name="author" content="Xavier Rémy">
+    <meta name="robots" content="noindex"> <!-- noindex: Empêche les moteurs de recherche (crawlers) d'indexer la page, d'y ajouter une description... -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP2 Xavier Rémy</title>
-    <script src="js/fonctionsStars.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/entete.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/tableau.css">
     <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="css/formulaire.css">
@@ -79,7 +82,7 @@
 
     <div id="accueil">
 
-        <section>
+        <section class="conteneur">
 
             <h2>Accueil</h2>
 
@@ -105,9 +108,60 @@
 
     <div id="article">
 
-        <section>
+        <section class="conteneur"> <!-- j'avais mis le titre dans <article>, mais une <section> sans titre crée un Warning -->
 
-            <h2>Pour créer du divertissement...</h2>
+            <h2 id="display__none">Pour créer du divertissement...</h2>
+
+            <article class="article">
+
+                <h2>Pour créer du divertissement...</h2>
+
+                <div class="article__div">
+
+                    <section class="article__paragraphe">
+
+                        <h3>Un sentiment d'admiration</h3>
+
+                        <p class="article__texte">
+                            Je me sens chanceux d'être jeune aujourd'hui, alors que l'industrie du jeu vidéo n'a que quelques décennies. En effet, les jeux vidéo de différentes générations ont enchanté mon enfance, et je leur dois tant de beaux souvenirs. Je trouve fascinant la façon dont leur conception nécessite l'implication de plusieurs formes d'art, ce qui contribue à embellir l'expérience générale ainsi que l'immersion des joueurs!
+                        </p>
+
+                    </section>
+
+                    <figure class="article__figure">
+                        <img src="images/article/coeur-parmi-les-feuilles.jpg" alt="un coeur parmi les feuilles" width="333" height="250" class="article__img">
+                      </figure>
+
+                </div>
+
+                <div class="article__div">
+
+                    <section class="article__paragraphe">
+
+                        <h3>Un avenir incertain</h3>
+
+                        <p class="article__texte">
+                            Après avoir longtemps réfléchi, j'ai conclu que je n'ai pas un métier de rêve. Il me reste seulement l'idée de mon enfance: devenir développeur de jeux vidéo indépendant. Si je ne compte pas le fun que j'avais avec les éditeurs de niveau, je n'ai aucune expérience en tant que futur artiste. Cependant, il y a une chose que je sais bien faire: me surpasser...
+                        </p>
+                    
+                    </section>
+
+                    <figure class="article__figure">
+                        <img src="images/article/de-grandes-ambitions.png" alt="mon autoportrait" width="350" height="250" class="article__img">
+                        <!--<figcaption class="article__figcaption"></figcaption>-->
+                      </figure>
+
+                </div>
+
+                <div class="article__div">
+
+                    <p class="article__texte">
+                        Présentement, j'étudie en Techniques d'intégration multimédia (TIM), un programme qui me permettera d'apprendre à créer mes propres jeux, et à acquérir les compétences nécessaires pour devenir développeur. Et voici le fruit de mon travail de 1ère session! Je ne suis qu'au début de mon parcours, alors je garderai le fil de ma progression par ce site web.
+                    </p>
+
+                </div>
+
+            </article>
 
         </section>
 
@@ -115,7 +169,7 @@
 
     <div id="tableau">
 
-        <section>
+        <section class="conteneur">
 
             <h2>Tableau de mes compétences</h2>
 
@@ -176,7 +230,7 @@
 
                         <td></td> <!-- niveau -->
 
-                        <!-- amélioration -->
+                        <td></td> <!-- amélioration -->
 
                     </tr> 
 
@@ -184,7 +238,7 @@
 
                         <th>Visuels: Dessein numérique</th>
 
-                        <!-- description -->
+                        <td></td> <!-- description -->
 
                         <td></td> <!-- application -->
 
@@ -198,7 +252,7 @@
 
                         <th>Composition musicale</th>
 
-                        <!-- description -->
+                        <td></td> <!-- description -->
 
                         <td></td> <!-- application -->
 
@@ -226,13 +280,13 @@
 
                         <th>Bilinguisme</th>
 
-                        <!-- description -->
+                        <td></td> <!-- description -->
 
-                        <!-- application -->
+                        <td></td> <!-- application -->
 
-                        <!-- niveau -->
+                        <td></td> <!-- niveau -->
 
-                        <!-- amélioration -->
+                        <td></td> <!-- amélioration -->
 
                     </tr>
 
@@ -251,7 +305,7 @@
 
     <div id="galerie">
 
-        <section>
+        <section class="conteneur">
 
             <h2>Galerie de mes travaux</h2>
 
@@ -261,7 +315,7 @@
 
     <div id="videos">
 
-        <section>
+        <section class="conteneur">
 
             <h2>Vidéos de mes plus grandes inspirations</h2>
 
@@ -271,13 +325,13 @@
 
     <div id="formulaire"> <!-- Référence forms HTML: https://www.w3schools.com/html/html_forms.asp -->
 
-        <section>
+        <section class="conteneur">
 
             <h2>Formulaire</h2>
 
-            <form action="" class="formulaire">
+            <form class="formulaire">
 
-            <label id="form__courriel" for="">Adresse courriel: <input type="email"></label>
+            <label id="form__courriel">Adresse courriel: <input type="email"></label>
             
                 <fieldset class="notif">
 
@@ -337,63 +391,59 @@
 
         <footer>
 
-            <!--<div class="pied">
-                <h2>Pour me contacter</h2>
-            </div>-->
-
+            <h2 id="pied__h2">Pour me contacter</h2>
             
-                <!-- Adresse du Collège -->
-                <section class="pied__section">
-                    <h3>Adresse</h3>
-                    <ul class="adresse">
-                      <li>3800 Sherbrooke est</li>
-                      <li>Montréal, QC</li>
-                      <li>H1X 2A2</li>
-                    </ul>
-                </section>
+            <!-- Adresse du Collège -->
+            <section class="pied__section">
+                <h3>Adresse</h3>
+                <ul class="adresse">
+                    <li>3800 Sherbrooke est</li>
+                    <li>Montréal, QC</li>
+                    <li>H1X 2A2</li>
+                </ul>
+            </section>
 
-                <!-- Réseaux sociaux -->
-                <section class="pied__section">
-                    <h3>Réseaux sociaux</h3>
+            <!-- Réseaux sociaux -->
+            <section class="pied__section">
+                <h3>Réseaux sociaux</h3>
 
-                    <label class="pied__social__img" id="github">
-                        <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link"><img src="images/socialmedia/github/github.png" alt="logo github" width="68" height="68"></a>
-                        <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link_hover"><img src="images/socialmedia/github/github-hover.png" alt="hover logo github" width="68" height="68"></a>
-                    </label>
+                <label class="pied__social__img" id="github">
+                    <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link"><img src="images/socialmedia/github/github.png" alt="logo github" width="68" height="68"></a>
+                    <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link_hover"><img src="images/socialmedia/github/github-hover.png" alt="hover logo github" width="68" height="68"></a>
+                </label>
 
-                    <label class="pied__social__img" id="behance">
-                        <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link"><img src="images/socialmedia/behance/behance.png" alt="logo behance" width="68" height="68"></a>
-                        <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link_hover"><img src="images/socialmedia/behance/behance-hover.png" alt="hover logo behance" width="68" height="68"></a>
-                    </label>
+                <label class="pied__social__img" id="behance">
+                    <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link"><img src="images/socialmedia/behance/behance.png" alt="logo behance" width="68" height="68"></a>
+                    <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link_hover"><img src="images/socialmedia/behance/behance-hover.png" alt="hover logo behance" width="68" height="68"></a>
+                </label>
 
-                    <label class="pied__social__img" id="linkedin">
-                        <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link"><img src="images/socialmedia/linkedin/linkedin.png" alt="logo linkedin" width="88" height="68"></a>
-                        <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link_hover"><img src="images/socialmedia/linkedin/linkedin-hover.png" alt="hover logo linkedin" width="88" height="68"></a>
-                    </label>
+                <label class="pied__social__img" id="linkedin">
+                    <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link"><img src="images/socialmedia/linkedin/linkedin.png" alt="logo linkedin" width="88" height="68"></a>
+                    <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link_hover"><img src="images/socialmedia/linkedin/linkedin-hover.png" alt="hover logo linkedin" width="88" height="68"></a>
+                </label>
 
-                </section>
+            </section>
 
-                <!-- Description du département -->
-                <section class="pied__section">
-                    <h3>Département</h3>
-                    <label class="pied__departement__img" id="tim">
-                        <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link"><img src="images/tim/tim.png" alt="logo tim" width="198" height="91"></a>
-                        <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link_hover"><img src="images/tim/tim-hover.png" alt="hover logo tim" width="198" height="91"></a>
-                    </label>
-                </section>
+            <!-- Description du département -->
+            <section class="pied__section">
+                <h3>Département</h3>
+                <label class="pied__departement__img" id="tim">
+                    <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link"><img src="images/tim/tim.png" alt="logo tim" width="198" height="91"></a>
+                    <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link_hover"><img src="images/tim/tim-hover.png" alt="hover logo tim" width="198" height="91"></a>
+                </label>
+            </section>
 
-                <!-- Liens importants -->
-                <section class="pied__section" id="pied__liens">
-                    <h3>Liens utiles</h3>
+            <!-- Liens importants -->
+            <section class="pied__section" id="pied__liens">
+                <h3>Liens utiles</h3>
 
-                    <ul class="liens">
-                        <li><a href="https://digitalfox-tutorials.com/tutorial.php?title=Creating-the-front-end-of-a-rating-system-with-css-and-javascript" target="_blank">Article pour comment effectuer un form 5 étoiles</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=_gToDN-aoyI" target="_blank">Vidéo pour comment faire un form 5 étoiles</a></li>
-                    </ul>
+                <ul class="liens">
+                    <li><a href="https://digitalfox-tutorials.com/tutorial.php?title=Creating-the-front-end-of-a-rating-system-with-css-and-javascript" target="_blank">Article pour comment effectuer un form 5 étoiles</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=_gToDN-aoyI" target="_blank">Vidéo pour comment faire un form 5 étoiles</a></li>
+                </ul>
                     
-                </section>
+            </section>
             
-
             <!-- Avis de confidentialité -->
             <div class="pied__section" id="notice">
                 Avis de confidentialité | Privacy Notice
