@@ -329,7 +329,7 @@
                 </figure>
 
                 <figure class="galerie__figure">
-                    <img src="images/galerie/senseDuNom2.png" alt="les figures de la nuit" width="200" height="200" class="galerie__img">
+                    <img src="images/galerie/senseDuNom2.png" alt="notre nom a-t-il un sens compo 2" width="200" height="200" class="galerie__img">
                     <figcaption class="galerie__figcaption">Notre nom a-t-il un sens? - Composition 2</figcaption>
                 </figure>
 
@@ -352,10 +352,10 @@
 
             <div class="videos">
                
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CyVv-jFJiJ8?si=PKrB3HJOjlOKZ6BE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Hojv0m3TqA?si=kyqMGG7OrrR95z2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YXYpSXI0P0I?si=3C73CtWDeUq9U7MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/M0JtUImSEzU?si=3L6x4-SN75bCGI0Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CyVv-jFJiJ8?si=PKrB3HJOjlOKZ6BE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Hojv0m3TqA?si=kyqMGG7OrrR95z2H" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YXYpSXI0P0I?si=3C73CtWDeUq9U7MY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M0JtUImSEzU?si=3L6x4-SN75bCGI0Z" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
             </div>
 
@@ -375,19 +375,21 @@
             
                 <div id="notif">
 
-                    <div id="notif__autor"> <!-- Choisir si l'on veut des notifications -->
+                    <fieldset id="notif__autor"> <!-- Choisir si l'on veut des notifications -->
+
+                        <legend>Souhaiteriez-vous recevoir des notifications?</legend>
 
                         <!-- Pour les radio bouton, on crée un groupe en utilisant
                             la même valeur pour l'attribut name -->
-                        <p>Souhaiteriez-vous recevoir des notifications?</p>
+
                         <label for="notif__yes">Oui: <input type="radio" name="notif__autorisation" id="notif__yes"></label>
                         <label for="notif__no">Non: <input type="radio" name="notif__autorisation" id="notif__no"></label>
 
-                    </div>
+                    </fieldset>
 
-                    <div id="notif__pref"> <!-- Choisir quels types de notifications -->
+                    <fieldset id="notif__pref"> <!-- Choisir quels types de notifications -->
                         
-                        <p>Je souhaite être informé(e) de...</p>
+                        <legend>Je souhaite être informé(e) de...</legend>
 
                         <label for="notif__choix1">Tout nouveau jeu publié <input type="radio" name="notif__choix" id="notif__choix1"></label>
 
@@ -397,13 +399,16 @@
 
                         <label for="notif__choix4">Toute mise à jour importante <input type="radio" name="notif__choix" id="notif__choix4"></label>
 
-                    </div>
+                    </fieldset>
     
                 </div>
 
             <div id="rating"> <!-- Combien d'étoiles donnez-vous au site? -->
 
-                <div class="ratings__conteneur">
+                <fieldset class="ratings__conteneur">
+
+                    <legend id="ratings__legend">Évaluez mon site</legend>
+
                     <div class="stars">
                     <span data-rating="5"><label for="star5">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star5"></span>
                     <span data-rating="4"><label for="star4">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star4"></span>
@@ -411,12 +416,12 @@
                     <span data-rating="2"><label for="star2">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star2"></span>
                     <span data-rating="1"><label for="star1">&#9733;</label><input type="radio" name="rating__star" class="star__radio" id="star1"></span>
                     </div>
-                 </div>
+                </fieldset>
 
             </div>
 
             <p>Des commentaires?</p> <!-- Espace pour laisser des commentaires -->
-            <label><textarea name="commentaires" id="form__comments" cols="30" rows="10"></textarea></label>
+            <textarea name="commentaires" id="form__comments" cols="30" rows="10"></textarea>
 
             <div id="form__boutons"> <!-- Boutons submit et reset -->
                 <input type="submit" value="Envoyer">

@@ -50,12 +50,6 @@
     
 }
 
-#notif__autor {
-
-    border: none;
-
-}
-
 #notif__pref {
 
     flex-direction: column;
@@ -88,9 +82,16 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
+#ratings__legend {
+
+    display: none;
+
+}
+
 .ratings__conteneur {
 
     display: flex;
+    background-color: #000;
 }
 
 .stars {
@@ -103,7 +104,7 @@
 
 .stars span {
 
-    color: #26262b;
+    color: #aaa;
     cursor: pointer;
     transition: color .2s, transform .2s;
     font-size: 50px;
