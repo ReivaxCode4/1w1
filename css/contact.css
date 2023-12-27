@@ -3,7 +3,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 25px 20px 10px 20px;
-    justify-content: space-between;
+    gap: 15px;
 
 }
 
@@ -12,13 +12,13 @@ footer {
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
-    flex: 1 0 33%;
+    flex: 1 0 23%;
 
 }
 
 #pied__h2 {
 
-    margin-bottom: 20px;
+    margin-bottom: 0;
     
 }
 
@@ -39,7 +39,7 @@ footer {
 
 /* //////////////////////////////////////////////// */
 
-.adresse, .liens { /* ul */
+.adresse, .liens {
 
     list-style-type: none;
 
@@ -47,16 +47,24 @@ footer {
 
 .adresse, #notice, .liens a {
 
-    color: #fff;
     font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+.adresse, #notice {
+
+    white-space: nowrap;
 
 }
 
 /* Disposition des images/liens */
 
-.pied__social__img, .pied__departement__img {
+.pied__social, .pied__departement__img {
 
     display: flex;
+    flex-wrap: nowrap;
 
 }
 
@@ -65,7 +73,7 @@ footer {
 #github a:nth-of-type(1), #github:hover a:nth-of-type(2),
 #behance a:nth-of-type(1), #behance:hover a:nth-of-type(2),
 #linkedin a:nth-of-type(1), #linkedin:hover a:nth-of-type(2),
-#tim a:nth-last-of-type(2), #tim:hover a:nth-last-of-type(1) {
+#tim a:nth-of-type(1), #tim:hover a:nth-of-type(2) {
 
     display: block;
 
@@ -74,7 +82,7 @@ footer {
 #github  a:nth-of-type(2), #github:hover a:nth-of-type(1),
 #behance a:nth-of-type(2), #behance:hover a:nth-of-type(1),
 #linkedin  a:nth-of-type(2), #linkedin:hover a:nth-of-type(1),
-#tim a:nth-last-of-type(1), #tim:hover a:nth-last-of-type(2) {
+#tim a:nth-of-type(2), #tim:hover a:nth-of-type(1) {
 
     display: none;
 

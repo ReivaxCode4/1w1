@@ -1,9 +1,10 @@
 
-#formulaire > section {
+#formulaire .conteneur {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
     
 }
 
@@ -11,7 +12,18 @@
 
     display: flex;
     flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
     gap: 10px;
+
+}
+
+#notif, #notif__autor, #notif__pref, #rating, #form__boutons {
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
 
 }
 
@@ -20,22 +32,22 @@
 
 .formulaire input[type="email"] {
 
-    background-color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #555;
+    padding: 3px;
+    
 
 }
 
-.notif {
+#notif {
 
     flex-direction: column;
+    background-color: #222;
+    border: 1px solid #9E92F9;
+    padding: 15px;
     
-}
-
-.formulaire fieldset {
-
-    background-color: #bbb;
-    display: flex;
-    gap: 10px;
-
 }
 
 #notif__autor {
@@ -52,15 +64,15 @@
 
 #form__comments {
 
-    height: 110px;
-    
-}
-
-.formulaire legend {
-
-    font-size: 1.5rem;
+    width: 500px;
+    height: 130px;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #555;
     padding: 3px;
-
+    resize: none;
+    
 }
 
 .formulaire .langage {
@@ -69,7 +81,7 @@
     
 }
 
-fieldset#rating {
+#rating {
 
     display: flex;
     justify-content: center;
@@ -114,5 +126,23 @@ fieldset#rating {
 .star__radio:checked > span {
 
     color: #9e92f9;
+
+}
+
+.formulaire input[type="submit"], .formulaire input[type="reset"] {
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #9E92F9;
+    width: 120px;
+    padding: 7px;
+
+}
+
+.formulaire input[type="submit"]:hover, .formulaire input[type="reset"]:hover {
+
+    color: #9EEB79;
 
 }

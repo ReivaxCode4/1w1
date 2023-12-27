@@ -3,5 +3,51 @@
 
     display: flex;
     align-content: center;
+    padding: 50px;
     
+}
+
+#tableau__vide {
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+
+}
+
+.tableau {
+
+    border-collapse: collapse;
+    flex: 0 1 80%;
+
+}
+
+.tableau th, .tableau td {
+
+    padding: 10px;
+    border: 1px solid #9E92F9;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+.tableau th {
+
+    background-image: linear-gradient(to top right, #000, #26262B);
+
+}
+
+.tableau td {
+
+    background-color: #26262B;
+    line-height: 1.5rem;
+    
+}
+
+#tableau__footer {
+
+    background-color: #222;
+    color: #9E92F9;
+
 }

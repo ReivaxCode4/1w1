@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/tableau.css">
     <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/videos.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,31 +24,28 @@
 
 <body> <!-- Shortcut View Terminal: Pour rentrer les commandes Git -->
 
-    <div id="entete">
+    <div id="entete"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section entête: -->
 
         <header>
 
-            <div class="entete__div">
-                <img src="images/logo.PNG" width="100" height="100" alt="logo">
+            <div class="entete__div"> <!-- div du logo -->
+                <img src="images/logo.PNG" width="100" height="100" alt="mon logo actuel">
             </div>
 
-            <div class="entete__div">
+            <div class="entete__div"> <!-- div de h1 -->
 
-                <h1>
-                    <span>Parce que nous </span>
-                    <span>aimons les jeux</span>
-                </h1>
+                <h1><span>Parce que nous</span><span>aimons les jeux</span></h1>
 
             </div>
 
-            <div class="entete__div">
+            <div class="entete__div"> <!-- div de la barre de recherche -->
                 <form class="entete__form">
                     <input type="search" id="recherche" placeholder="Rechercher">
                     <label for="recherche">🔎</label>
                 </form>
             </div>
 
-            <div class="entete__div">
+            <div class="entete__div"> <!-- div du menu des langues -->
                 <nav class="navlangue">
                     <a href="#accueil">
                         <img src="images/flags/fr.png" width="32" height="21" alt="site web affiché en français">FR
@@ -58,13 +56,13 @@
                 </nav>
             </div>
 
-            <input type="checkbox" id="chk_burger"> <!-- Input doit être avant label -->
-            <label for="chk_burger" id="burger">
-                <img src="images/icons/burger/burger.png" alt="" width="32" height="32">
-                <img src="images/icons/burger/burger-hover.png" alt="" width="32" height="32">
+            <input type="checkbox" id="chk_burger"> <!-- div du menu burger -->
+            <label for="chk_burger" id="burger"> <!-- Input doit être avant label -->
+                <img src="images/icons/burger/burger.png" alt="icône menu burger" width="32" height="32">
+                <img src="images/icons/burger/burger-hover.png" alt="icône menu burger sélectionné" width="32" height="32">
             </label>
 
-            <nav class="navigation">
+            <nav class="navigation"> <!-- Menu principal -->
                 <a href="#accueil">Accueil</a>
                 <a href="#article">Article</a>
                 <a href="#tableau">Tableau</a>
@@ -80,24 +78,24 @@
 
     <!--3*(div>section)-->
 
-    <div id="accueil">
+    <div id="accueil"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section accueil: -->
 
         <section class="conteneur">
 
             <h2>Accueil</h2>
 
-            <ul class="profil">
+            <ul class="profil"> <!-- Contenu de accueil -->
 
                 <li>TP2</li>
-                <li>Titre du site: Parce que nous aimons les jeux</li>
-                <li>Auteur: Xavier Rémy</li>
-                <li>Cours: 582-1W1 - Mise en page Web</li>
-                <li>Programme d'étude: Techniques d'intégration multimédia</li>
+                <li><span>Titre du site:</span><span>Parce que nous aimons les jeux</span></li>
+                <li><span>Auteur:</span><span>Xavier Rémy</span></li>
+                <li><span>Cours:</span><span>582-1W1 - Mise en page Web</span></li>
+                <li><span>Programme d'étude:</span><span>Techniques d'intégration multimédia</span></li>
                 <!-- Adresse de la Github-page -->
-                <li>Github page: <a href="https://reivaxcode4.github.io/1w1/" target="_blank">https://reivaxcode4.github.io/1w1/</a></li>
-                <li>Dépôt github: <a href="https://github.com/ReivaxCode4" target="_blank">https://github.com/ReivaxCode4</a></li>
-                <li>Collège de Maisonneuve</li>
-                <li>Automne 2023</li>
+                <li><span>Github page:</span><a href="https://reivaxcode4.github.io/1w1/" target="_blank"><span>https://reivaxcode4.github.io/1w1/</span></a></li>
+                <li><span>Dépôt github:</span><a href="https://github.com/ReivaxCode4" target="_blank"><span>https://github.com/ReivaxCode4</span></a></li>
+                <li><span>Collège de Maisonneuve</span></li>
+                <li><span>Automne 2023</span></li>
 
             </ul>
 
@@ -106,7 +104,7 @@
 
     </div> <!-- Fin #accueil -->
 
-    <div id="article">
+    <div id="article"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section article: -->
 
         <section class="conteneur"> <!-- j'avais mis le titre dans <article>, mais une <section> sans titre crée un Warning -->
 
@@ -118,7 +116,7 @@
 
                 <div class="article__div">
 
-                    <section class="article__paragraphe">
+                    <section class="article__paragraphe"> <!-- Premier paragraphe -->
 
                         <h3>Un sentiment d'admiration</h3>
 
@@ -128,7 +126,7 @@
 
                     </section>
 
-                    <figure class="article__figure">
+                    <figure class="article__figure"> <!-- Image du premier paragraphe -->
                         <img src="images/article/coeur-parmi-les-feuilles.jpg" alt="un coeur parmi les feuilles" width="333" height="250" class="article__img">
                       </figure>
 
@@ -136,7 +134,7 @@
 
                 <div class="article__div">
 
-                    <section class="article__paragraphe">
+                    <section class="article__paragraphe"> <!-- Deuxième paragraphe -->
 
                         <h3>Un avenir incertain</h3>
 
@@ -146,14 +144,13 @@
                     
                     </section>
 
-                    <figure class="article__figure">
+                    <figure class="article__figure"> <!-- Image du deuxième paragraphe -->
                         <img src="images/article/de-grandes-ambitions.png" alt="mon autoportrait" width="350" height="250" class="article__img">
-                        <!--<figcaption class="article__figcaption"></figcaption>-->
                       </figure>
 
                 </div>
 
-                <div class="article__div">
+                <div class="article__div"> <!-- Troisième paragraphe -->
 
                     <p class="article__texte">
                         Présentement, j'étudie en Techniques d'intégration multimédia (TIM), un programme qui me permettera d'apprendre à créer mes propres jeux, et à acquérir les compétences nécessaires pour devenir développeur. Et voici le fruit de mon travail de 1ère session! Je ne suis qu'au début de mon parcours, alors je garderai le fil de ma progression par ce site web.
@@ -167,7 +164,7 @@
 
     </div> <!-- Fin #article -->
 
-    <div id="tableau">
+    <div id="tableau"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section tableau: -->
 
         <section class="conteneur">
 
@@ -175,20 +172,14 @@
 
             <!-- conteneur principal du tableau -->
 
-            <table class="horaire">
-
-                <!-- <caption></caption> -->
+            <table class="tableau">
                 
                 <!-- On peut utiliser plus d'une classe dans un même élément -->
 
-                <!-- le premier tr, la première ligne (table row),
-                    contient les 5 jours de la semaine -->
-
-                <thead>
-
+                <thead> <!-- Les titres des colonnes: -->
                     <tr>
                         <!-- la première cellule est vide -->
-                        <th id="vide"></th>
+                        <td id="tableau__vide">Compétence:</td>
 
                         <th>Description:</th>
 
@@ -199,102 +190,93 @@
                         <th>Afin de m'améliorer:</th>
 
                     </tr>
-
                 </thead>
 
-                <!-- Pour chacune des lignes suivantes, le premier th contient l'heure -->
-
                 <tbody>
-
                     <tr>
 
                         <th>Programmation</th>
 
-                        <td></td> <!-- description -->
+                        <td>Comprendre et écrire le code nécessaire pour créer le jeu et assurer son bon fonctionnement</td> <!-- description -->
 
-                        <td></td> <!-- application -->
+                        <td>J'ai appris les bases de JavaScript, et je suis maintenant capable de créer des jeux 2D simples</td> <!-- application -->
 
-                        <td></td> <!-- niveau -->
+                        <td>Débutant</td> <!-- niveau -->
 
-                        <td></td> <!-- amélioration -->
+                        <td>J'apprendrai d'autres langages de programmation au fil des sessions, et je compte me pratiquer en créant mes propres jeux</td> <!-- amélioration -->
 
                     </tr>
-
                     <tr>
 
                         <th>Conception de jeux</th>
 
-                        <td></td> <!-- description -->
+                        <td>Déterminer les méchaniques principales, une boucle de gameplay dynamique, la progression du joueur pour créer un jeu amusant</td> <!-- description -->
 
-                        <td></td> <!-- application -->
+                        <td>Pour mes projets personnels, je compte réfléchir activement à ce que je pourrai ajouter pour améliorer l'expérience du joueur</td> <!-- application -->
 
-                        <td></td> <!-- niveau -->
+                        <td>Débutant</td> <!-- niveau -->
 
-                        <td></td> <!-- amélioration -->
+                        <td>Au fur et à mesure que je m'améliore en programmation, je pourrai rêver plus grand; des jeux plus complexes!</td> <!-- amélioration -->
 
                     </tr> 
-
                     <tr>
 
                         <th>Visuels: Dessein numérique</th>
 
-                        <td></td> <!-- description -->
+                        <td>Développer des illustrations, des sprite sheets, des animations attrayantes à intégrer dans le jeu</td> <!-- description -->
 
-                        <td></td> <!-- application -->
+                        <td>Avec Photoshop, je peux créer des visuels et des sprite sheets. Mais, je n'ai pas suffisamment de pratique (très amateur)</td> <!-- application -->
 
-                        <td></td> <!-- niveau -->
+                        <td>Débutant</td> <!-- niveau -->
 
-                        <td></td> <!-- amélioration -->
+                        <td>Beaucoup de pratique! Je pourrai progressivemment développer mon propre style artistique en créant les visuels de mes jeux</td> <!-- amélioration -->
 
                     </tr>
-
                     <tr>
 
                         <th>Composition musicale</th>
 
-                        <td></td> <!-- description -->
+                        <td>Créer les effets sonores et les musiques accompagnant le jeu à partir d'une station audionumérique (DAW)</td> <!-- description -->
 
-                        <td></td> <!-- application -->
+                        <td>J'apprécie autant la musique que les visuels dans les jeux, alors j'aimerai éventuellement apprendre à en créer. Cependant, il va falloir que j'apprenne moi-même</td> <!-- application -->
 
-                        <td></td> <!-- niveau -->
+                        <td>Novice</td> <!-- niveau -->
 
-                        <td></td> <!-- amélioration -->
+                        <td>J'apprendrai lors de mon temps libre les bases de FL Studio (ou autre logiciel similaire). Ce sera un de mes défis personnels...</td> <!-- amélioration -->
 
                     </tr>
-
                     <tr>
 
                         <th>Éthique de travail: Dévouement</th>
 
-                        <td></td> <!-- description -->
+                        <td>Qualité de rester investi dans ce que l'on entreprend, du début jusqu'à la fin</td> <!-- description -->
 
-                        <td></td> <!-- application -->
+                        <td>Le processus de rester motivé pour accomplir des tâches demeure une chose qui me reste à maîtriser. Mais, je sais que je peux accomplir de grandes choses lorsque j'y arrive!</td> <!-- application -->
 
-                        <td></td> <!-- niveau -->
+                        <td>Intermédiaire</td> <!-- niveau -->
 
-                        <td></td> <!-- amélioration -->
+                        <td>Devenir un développeur de jeux vidéo indépendant n'est certainement pas chose facile. Pour créer des oeuvres dont je serai fier, je dois continuer de travailler fort</td> <!-- amélioration -->
 
                     </tr>
-
                     <tr>
 
                         <th>Bilinguisme</th>
 
-                        <td></td> <!-- description -->
+                        <td>Maîtrise de deux langues différentes, et pouvoir bien les utiliser en milieu professionnel</td> <!-- description -->
 
-                        <td></td> <!-- application -->
+                        <td>Je peux bien comprendre, communiquer et travailler en français et en anglais. Ainsi, je peux traduire mes jeux</td> <!-- application -->
 
-                        <td></td> <!-- niveau -->
+                        <td>Avancé</td> <!-- niveau -->
 
-                        <td></td> <!-- amélioration -->
+                        <td>Je chercherai à travailler dans les 2 langues, à enrichir mes idées par le pouvoir des mots. Et si j'osais apprendre une troisième langue!</td> <!-- amélioration -->
 
                     </tr>
-
                 </tbody>
 
-                <tfoot>
-
-
+                <tfoot> <!-- Footer du tableau -->
+                    <tr>
+                        <td id="tableau__footer" colspan="5">Après chaque session, je mettrai à jour le tableau si je me suis amélioré dans une compétence, ou si j'apprends une nouvelle compétence qui pourrait m'être utile</td>
+                    </tr>
                 </tfoot>
 
             </table>
@@ -303,27 +285,85 @@
 
     </div> <!-- Fin #tableau -->
 
-    <div id="galerie">
+    <div id="galerie"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section galerie: -->
 
         <section class="conteneur">
 
             <h2>Galerie de mes travaux</h2>
 
+            <figure class="galerie">
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/banc.JPG" alt="un banc isolé" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Un banc isolé</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/sentier.JPG" alt="un chemin mystérieux" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Un chemin mystérieux</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/mur-aux-baies.JPG" alt="un arbuste près d'un mur" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Un arbuste près d'un mur</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/cage.JPG" alt="les cages de la forêt" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Les cages de la forêt</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/tamia.JPG" alt=" tamia surpris par l'objectif" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Tamia surpris par l'objectif</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/silhouettes.JPG" alt="les figures de la nuit" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Les figures de la nuit</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/senseDuNom1.png" alt="notre nom a-t-il un sens compo 1" width="200" height="200" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Notre nom a-t-il un sens? - Composition 1</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/senseDuNom2.png" alt="les figures de la nuit" width="200" height="200" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Notre nom a-t-il un sens? - Composition 2</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img src="images/galerie/maison-enchantee.jpg" alt="n'oublions pas" width="210" height="150" class="galerie__img">
+                    <figcaption class="galerie__figcaption">N'oublions pas...</figcaption>
+                </figure>
+
+            </figure>
+
         </section>
 
     </div> <!-- Fin #galerie -->
 
-    <div id="videos">
+    <div id="videos"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section vidéos -->
 
         <section class="conteneur">
 
             <h2>Vidéos de mes plus grandes inspirations</h2>
 
+            <div class="videos">
+               
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CyVv-jFJiJ8?si=PKrB3HJOjlOKZ6BE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Hojv0m3TqA?si=kyqMGG7OrrR95z2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YXYpSXI0P0I?si=3C73CtWDeUq9U7MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M0JtUImSEzU?si=3L6x4-SN75bCGI0Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+            </div>
+
         </section>
 
     </div> <!-- Fin #video -->
 
-    <div id="formulaire"> <!-- Référence forms HTML: https://www.w3schools.com/html/html_forms.asp -->
+    <div id="formulaire"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section formulaire: -->
 
         <section class="conteneur">
 
@@ -331,11 +371,11 @@
 
             <form class="formulaire">
 
-            <label id="form__courriel">Adresse courriel: <input type="email"></label>
+            <label id="form__courriel">Adresse courriel: <input type="email"></label> <!-- Imput de l'addresse courriel -->
             
-                <fieldset class="notif">
+                <div id="notif">
 
-                    <fieldset id="notif__autor">
+                    <div id="notif__autor"> <!-- Choisir si l'on veut des notifications -->
 
                         <!-- Pour les radio bouton, on crée un groupe en utilisant
                             la même valeur pour l'attribut name -->
@@ -343,9 +383,9 @@
                         <label for="notif__yes">Oui: <input type="radio" name="notif__autorisation" id="notif__yes"></label>
                         <label for="notif__no">Non: <input type="radio" name="notif__autorisation" id="notif__no"></label>
 
-                    </fieldset>
+                    </div>
 
-                    <fieldset id="notif__pref">
+                    <div id="notif__pref"> <!-- Choisir quels types de notifications -->
                         
                         <p>Je souhaite être informé(e) de...</p>
 
@@ -357,11 +397,11 @@
 
                         <label for="notif__choix4">Toute mise à jour importante <input type="radio" name="notif__choix" id="notif__choix4"></label>
 
-                    </fieldset>
+                    </div>
     
-                </fieldset>
+                </div>
 
-            <fieldset id="rating">
+            <div id="rating"> <!-- Combien d'étoiles donnez-vous au site? -->
 
                 <div class="ratings__conteneur">
                     <div class="stars">
@@ -373,13 +413,15 @@
                     </div>
                  </div>
 
-            </fieldset>
+            </div>
 
-            <p>Des commentaires?</p>
-            <textarea name="commentaires" id="form__comments" cols="30" rows="10"></textarea>
+            <p>Des commentaires?</p> <!-- Espace pour laisser des commentaires -->
+            <label><textarea name="commentaires" id="form__comments" cols="30" rows="10"></textarea></label>
 
-            <input type="submit" value="Envoyer">
-            <input type="reset" value="Rénitialiser">
+            <div id="form__boutons"> <!-- Boutons submit et reset -->
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Rénitialiser">
+            </div>
 
             </form>
 
@@ -387,7 +429,7 @@
 
     </div> <!-- Fin #formulaire -->
 
-    <div id="contact">
+    <div id="contact"> <!-- /////////////////////////////////////////////////////////////////////////////////////////////// Section contact: -->
 
         <footer>
 
@@ -407,20 +449,20 @@
             <section class="pied__section">
                 <h3>Réseaux sociaux</h3>
 
-                <label class="pied__social__img" id="github">
-                    <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link"><img src="images/socialmedia/github/github.png" alt="logo github" width="68" height="68"></a>
-                    <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link_hover"><img src="images/socialmedia/github/github-hover.png" alt="hover logo github" width="68" height="68"></a>
-                </label>
-
-                <label class="pied__social__img" id="behance">
-                    <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link"><img src="images/socialmedia/behance/behance.png" alt="logo behance" width="68" height="68"></a>
-                    <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link_hover"><img src="images/socialmedia/behance/behance-hover.png" alt="hover logo behance" width="68" height="68"></a>
-                </label>
-
-                <label class="pied__social__img" id="linkedin">
-                    <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link"><img src="images/socialmedia/linkedin/linkedin.png" alt="logo linkedin" width="88" height="68"></a>
-                    <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link_hover"><img src="images/socialmedia/linkedin/linkedin-hover.png" alt="hover logo linkedin" width="88" height="68"></a>
-                </label>
+                <div class="pied__social">
+                    <label class="pied__social__img" id="github">
+                        <a href="https://github.com/" target="_blank" id="github_link"><img src="images/socialmedia/github/github.png" alt="logo github" width="68" height="68"></a>
+                        <a href="https://github.com/ReivaxCode4" target="_blank" id="github_link_hover"><img src="images/socialmedia/github/github-hover.png" alt="hover logo github" width="68" height="68"></a>
+                    </label>
+                    <label class="pied__social__img" id="behance">
+                        <a href="https://www.behance.net/" target="_blank" id="behance_link"><img src="images/socialmedia/behance/behance.png" alt="logo behance" width="68" height="68"></a>
+                        <a href="https://www.behance.net/xavierrmy1" target="_blank" id="behance_link_hover"><img src="images/socialmedia/behance/behance-hover.png" alt="hover logo behance" width="68" height="68"></a>
+                    </label>
+                    <label class="pied__social__img" id="linkedin">
+                        <a href="https://www.linkedin.com/" target="_blank" id="linkedin_link"><img src="images/socialmedia/linkedin/linkedin.png" alt="logo linkedin" width="88" height="68"></a>
+                        <a href="https://linkedin.com/in/reivaxcode4" target="_blank" id="linkedin_link_hover"><img src="images/socialmedia/linkedin/linkedin-hover.png" alt="hover logo linkedin" width="88" height="68"></a>
+                    </label>
+                </div>
 
             </section>
 
@@ -428,7 +470,7 @@
             <section class="pied__section">
                 <h3>Département</h3>
                 <label class="pied__departement__img" id="tim">
-                    <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link"><img src="images/tim/tim.png" alt="logo tim" width="198" height="91"></a>
+                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/" target="_blank" id="tim_link"><img src="images/tim/tim.png" alt="logo tim" width="198" height="91"></a>
                     <a href="https://tim.cmaisonneuve.qc.ca/" target="_blank" id="tim_link_hover"><img src="images/tim/tim-hover.png" alt="hover logo tim" width="198" height="91"></a>
                 </label>
             </section>
@@ -438,8 +480,10 @@
                 <h3>Liens utiles</h3>
 
                 <ul class="liens">
-                    <li><a href="https://digitalfox-tutorials.com/tutorial.php?title=Creating-the-front-end-of-a-rating-system-with-css-and-javascript" target="_blank">Article pour comment effectuer un form 5 étoiles</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=_gToDN-aoyI" target="_blank">Vidéo pour comment faire un form 5 étoiles</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Genre_de_jeu_vid%C3%A9o" target="_blank">Liste des genres de jeux vidéos</a></li>
+                    <li> <a href="https://github.com/eddytuto/docwp/blob/main/git/00-intro-git.md" target="_blank">Introduction à GitHub</a></li>
+                    <li><a href="https://digitalfox-tutorials.com/tutorial.php?title=Creating-the-front-end-of-a-rating-system-with-css-and-javascript" target="_blank">Article pour comment faire un form 5 étoiles</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=_gToDN-aoyI" target="_blank">Vidéo sur comment faire un form 5 étoiles</a></li>
                 </ul>
                     
             </section>
